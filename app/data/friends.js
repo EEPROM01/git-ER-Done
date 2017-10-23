@@ -1,4 +1,4 @@
-var potential = [
+var friends = [
   {
   "name":"Jim",
   "photo":"/../public/images/Jim.jpg",
@@ -81,4 +81,4 @@ var potential = [
 }   
 ]
 
-module.exports = potential;
+module.exports = friends;

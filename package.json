@@ -1,17 +1,27 @@
 {
-  "name": "Git-ER-Done",
+  "name": "git-er-done",
   "version": "1.0.0",
-  "description": "dating app",
+  "description": "dating type app for trailer folk",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "install": "^0.10.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EEPROM01/git-ER-Done.git"
+  },
+  "author": "ST",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.1",
-    "express": "^4.13.4",
-    "path": "^0.12.7"
-  }
+  "bugs": {
+    "url": "https://github.com/EEPROM01/git-ER-Done/issues"
+  },
+  "homepage": "https://github.com/EEPROM01/git-ER-Done#readme"
 }
