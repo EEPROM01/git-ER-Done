@@ -1,13 +1,18 @@
-#FriendFinder
-#Week of 13 HW: Friend Finder - Node and Express Servers
-Objectives
+** FriendFinder **
+=================================
+
+Week of 13 HW: Friend Finder - Node and Express Servers
+----------------------------------
+
+- Objectives
+
 In this activity you will be building a compatibility-based "Friend Finder" application. (Basically a dating app)
 
 The application will take in results from users' surveys then compare their results against all other users who have completed it. The application will then display the name and picture of the user with the best match overall.
 
 You will use Express to handle routing and will deploy your application on Heroku so others can fill it out.
 
-For a demo of this application see: https://friend-finder.herokuapp.com/
+For a demo of this application see:
 
 Submission Requirements:
 
@@ -16,19 +21,6 @@ Basic Requirements
 
 Create a folder called FriendFinder. Inside the folder, organize your directories so it matches the following:
 
- FriendFinder
- 	- app
- 		- data
- 			- friends.js
- 		- public
- 			- home.html
- 			- survey.html
- 		- routing
- 			- api-routes.js
- 			- html-routes.js
- 	- node_modules
- 	- package.json
- 	- server.js
 Your survey should have 10 questions of your choosing. Answers to the survey questions should be on a scale of 1-5 based on how much the user agrees or disagrees.
 
 Your server.js file should use the basic npm packages we've used in class: express, body-parser, path.
@@ -49,7 +41,7 @@ Each object should follow roughly the below format:
 
  {
    "name":"Ahmed",
-   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+   "photo":"",
    "scores":[
       5,
       1,
@@ -61,7 +53,7 @@ Each object should follow roughly the below format:
       5,
       4,
       1
-  	  ]
+  ]
  }
 Compatibility should be determined based on the following.
 

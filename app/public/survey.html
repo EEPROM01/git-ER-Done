@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
     <html>
 
     <head>
@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     
-        --
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
             <h3>Tell me about yer self</h3>
             <br>
             <h4>
-                <strong>Name: (Required) </strong>
+                <strong>Name:(Required)</strong>
             </h4>
             <input type='text' name id='name' class='form-control' required>'
             <br>
@@ -149,9 +149,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-
             <h3>
-
                 <strong>Question Nine</strong>
             </h3>
             <h4>Happy hour is hooking for burgers</h4>
@@ -190,7 +188,7 @@
             <footer class="footer">
                 <div class="container">
                     <p>
-                        <a href="/api/friends">API Friends List</a> |
+                        <a href="./api/friends">API Friends</a> 
                         <a href="git@github.com:eeprom01/FriendFinder.git">GitHub Repo</a>
                     </p>
                 </div>
@@ -212,7 +210,7 @@
                     </div>
                     <div class="modal-body">
                         <h2 id="matchName"></h2>
-                        <img id="matchImg" src="file:///Users/lisavanorden/Documents/RCB_files/week13_files/wk13_hw/friendfinder/assets/images/floya_avatar_pic.jpg"
+                        <img id="matchImg" src="c:\Users\Franklin\Desktop\git-ER-Done\app\public\images\tp.jpg"
                             alt="">
                     </div>
                     <div class="modal-footer">
@@ -231,7 +229,7 @@
                 '.chosen-select': {},
                 '.chosen-select-deselect': { allow_single_deselect: true },
                 '.chosen-select-no-single': { disable_search_threshold: 10 },
-                '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
+                '.chosen-select-no-results': { no_results_text: 'Nutin here' },
                 '.chosen-select-width': { width: "95%" }
             }
             for (var selector in config) {
@@ -252,7 +250,6 @@
                     })
                     return isValid;
                 }
-                // If all required fields are filled
                 if (validateForm() == true) {
                     // User data object
                     var userData = {

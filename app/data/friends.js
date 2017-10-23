@@ -1,4 +1,4 @@
-var friends = [
+let friends = [
   {
   "name":"Jim",
   "photo":"/../public/images/Jim.jpg",
@@ -79,6 +79,6 @@ var friends = [
     1
     ]
 }   
-]
+];
 
 module.exports = friends;
