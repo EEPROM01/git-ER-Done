@@ -1,4 +1,5 @@
-var friends = {
+var friends = [
+{
   "name":"Jim",
   "photo":"https://vignette.wikia.nocookie.net/trailerpark/images/f/f5/Lahey.jpg/revision/latest?cb=20091104161132",
   "scores":[
@@ -13,7 +14,7 @@ var friends = {
       4,
       1
     ]
-}  
+},  
 
 {
   "name":"Julian",
@@ -30,7 +31,7 @@ var friends = {
       4,
       1
     ]
-}
+},
 
 {
   "name":"Ricky",
@@ -47,7 +48,7 @@ var friends = {
       4,
       1
     ]
-}   
+},   
 
 {
   "name":"Bubbles",
@@ -64,7 +65,7 @@ var friends = {
       4,
       1
     ]
-} 
+}, 
 
 {
   "name":"Randy",
@@ -81,6 +82,7 @@ var friends = {
       4,
       1
     ]
-}  
+  }  
+];
 
 module.exports = friends;
