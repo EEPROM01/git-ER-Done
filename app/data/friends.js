@@ -1,4 +1,4 @@
-var friends = [
+var friendList = [
 {
   "name":"Jim",
   "photo":"https://vignette.wikia.nocookie.net/trailerpark/images/f/f5/Lahey.jpg/revision/latest?cb=20091104161132",
@@ -85,4 +85,4 @@ var friends = [
   }  
 ];
 
-module.exports = friends;
+module.exports = friendList;
