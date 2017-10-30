@@ -68,3 +68,6 @@ The person with the closest match should be the one with the "least" amount of d
 Once you've determined the closest match, display the result back to the user in the form of a modal pop-up.
 
 The result should display both the name and picture of the closest match.
+![Settings Window](https://raw.github.com/eeprom01/git-er-done/app/public/images/2017-10-30(1).png)
+![Settings Window](https://raw.github.com/eeprom01/git-er-done/app/public/images/2017-10-30.png)
+
