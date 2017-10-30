@@ -129,15 +129,15 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <br>
-                <!-- Materialize Modal Trigger/Submit Button -->
+                <!-- Trigger/Submit Button -->
                 <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger linnen lighten-1" id="submitBtn">Submit</button>
             </div>
         </div>
         <div class='col s4'>
-            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/eeprom01S' target='_blank'>GitHub</a></p>
+            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/eeprom01/git-ER-Done' target='_blank'>GitHub</a></p>
         </div>
 
-        <!-- Materialize Modal Structure -->
+        <!-- Modal Structure -->
         <div id="modal1" class="modal">
           <div class="modal-content">
             <h4>Say hello to your new roomate!</h4>
@@ -151,7 +151,7 @@
 
     </div>
 
-<!-- Grabs information and sends it to server -->
+
 <script type="text/javascript">
 $(document).ready(function() {
     $("#submitBtn").on("click", function() {
@@ -170,9 +170,9 @@ $(document).ready(function() {
             });
             return isValid;
         }
-        //if everything is filled
+      
         if (validateForm() == true) {
-            //creates a new friend from the values submitted
+            //creates a new friend 
             var newFriend = {
                 name: $('#name').val().trim(),
                 photo: $('#photo').val().trim(),
@@ -189,7 +189,7 @@ $(document).ready(function() {
                     $('#q10').val(),
                 ]
             };
-            //Grabs current URL of website
+            //Gets current URL of website
             var currentURL = window.location.origin;
             //AJAX posts the data to API.
             $.post(currentURL + "/api/friends", newFriend, function(data) {
