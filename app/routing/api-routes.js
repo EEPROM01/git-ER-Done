@@ -1,4 +1,4 @@
-var friendList = require('../data/friend.js');
+var friendList = require('../data/friends.js');
 
 module.exports = function(app){
   //a GET route that displays JSON of all possible friends
@@ -12,14 +12,17 @@ module.exports = function(app){
     var scoresArray = [];
     var friendCount = 0;
     var bestMatch = 0;
-
+    console.log(newFriendScores);
     //runs through all current friends in list
+    // console.log(req.body);
+    // console.log(res);
     for(var i=0; i<friendList.length; i++){
       var scoresDiff = 0;
       //run through scores to compare friends
       for(var j=0; j<newFriendScores.length; j++){
         scoresDiff += (Math.abs(parseInt(friendList[i].scores[j]) - parseInt(newFriendScores[j])));
       }
+      
 
       //push results into scoresArray
       scoresArray.push(scoresDiff);
